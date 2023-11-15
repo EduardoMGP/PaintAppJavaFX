@@ -21,14 +21,16 @@ public class Circle extends Dimension2D {
 
     @Override
     public void fill(GraphicsContext graphicsContext) {
+
         graphicsContext.setFill(super.getFillColor());
         graphicsContext.fillOval(
-                super.getXInitial() + 1, super.getYInitial() + 1,
-                super.width() - 2, super.height() - 2
+                super.getXInitial(), super.getYInitial(),
+                super.width(), super.height()
         );
         graphicsContext.fill();
 
         this.area();
+
     }
 
     public void area() {

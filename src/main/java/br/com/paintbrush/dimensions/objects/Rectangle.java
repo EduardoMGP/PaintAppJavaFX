@@ -22,17 +22,15 @@ public class Rectangle extends Dimension2D {
     @Override
     public void fill(GraphicsContext graphicsContext) {
 
-        float offset = super.getLineWidth() / 2;
-
-        graphicsContext.setLineWidth(super.getLineWidth());
         graphicsContext.setFill(super.getFillColor());
         graphicsContext.fillRect(
-                super.getXInitial() + offset, super.getYInitial() + offset,
-                super.width() - super.getLineWidth(), super.height() - super.getLineWidth()
+                super.getXInitial(), super.getYInitial(),
+                super.width(), super.height()
         );
         graphicsContext.fill();
 
         this.area();
+
     }
 
     public void area() {

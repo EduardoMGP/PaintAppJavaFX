@@ -1,7 +1,6 @@
 package br.com.paintbrush.dimensions;
 
 import javafx.scene.canvas.GraphicsContext;
-import javafx.scene.paint.Color;
 
 public abstract class Dimension3D extends Dimension2D {
 
